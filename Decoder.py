@@ -106,6 +106,7 @@ if __name__ == "__main__":
     parser.add_option("-o", "--output", action='store_true', default='False', help="Output decoded VBS to a text file (/path/to/file)")
     parser.add_option("-d", "--dotnet", action='store_true', default='False', help="Submit parsed VBS to .NET Fiddle & Output to Screen")
     (options, args) = parser.parse_args()
+
     if len(args) < 1:
         print "[!] Not enough Arguments, Need at least file path"
         parser.print_help()
